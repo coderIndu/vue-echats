@@ -1,0 +1,262 @@
+
+@font-face {
+  font-family: electronicFont;
+  src: url(~"assets/font/DS-DIGIT.TTF");
+}
+
+// 整体样式
+.main {
+  display: flex;
+  // 最小宽度
+  min-width: 1024px;
+  // 最大宽度
+  max-width: 2560px;
+  //background-color: pink;
+  margin: 0 auto;
+  .column {
+    flex: 3;
+  }
+  .column:nth-child(2) {
+    flex: 5;
+    margin: 0 0.625rem 0.9375rem;
+    //background-color: pink;
+  }
+}
+
+// 单个panel样式
+.panel {
+  width: 100%;
+  position: relative;
+  height: 16rem;
+  margin-bottom: 0.7rem;
+  border: 1px solid rgba(25, 186, 139, 0.17);
+  background: url(~"assets/imgs/line.png") no-repeat rgba(255,255,255,.02);
+  text-align: center;
+  // 伪元素实现盒子边框角效果
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-left: 2px solid #02a6b5;
+    border-top: 2px solid #02a6b5;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-right: 2px solid #02a6b5;
+    border-top: 2px solid #02a6b5;
+  }
+  .content ,
+  .content_right{
+    width: 90%;
+    height: 15rem;
+    //background-color: pink;
+    margin: 0.3125rem auto;
+  }
+  .panel-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-left: 2px solid #02a6b5;
+      border-bottom: 2px solid #02a6b5;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-right: 2px solid #02a6b5;
+      border-bottom: 2px solid #02a6b5;
+    }
+  }
+}
+// 通过定位盒子实现下边框的边角效果
+
+// 中间部分的头部模块
+.no {
+  background-color: rgba(101, 132, 226, 0.1);
+  padding: 0.625rem;
+  .no-hd {
+    position: relative;
+    border: 1px solid rgba(25,186, 193, .3);
+    ul {
+      display: flex;
+      li {
+        position: relative;
+        flex: 1;
+        height: 5rem;
+        font-size: 4.375rem;
+        color: #ffeb7b;
+        text-align: center;
+        // 使用自定义字体，需要在前方声明字体
+        font-family: "electronicFont";
+        // 通过伪元素选择器 实现中间灰色小竖条效果
+        &:nth-child(1)::after {
+          position: absolute;
+          content: '';
+          top: 25%;
+          right: 0;
+          height: 50%;
+          width: 0.0625rem;
+          background: rgba(255, 255, 255, .2);
+        }
+      }
+    }
+    // 通过伪元素选择器实现边角的小框效果
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 1.875rem;
+      height: 0.625rem;
+      border-top: 2px solid #02a6b5;
+      border-left: 2px solid #02a6b5;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      right: 0;
+      width: 1.875rem;
+      height: 0.625rem;
+      border-bottom: 2px solid #02a6b5;
+      border-right: 2px solid #02a6b5;
+    }
+  }
+  .no-bd {
+    ul {
+      display: flex;
+
+      li {
+        flex: 1;
+        text-align: center;
+        color: rgba(255, 255, 255, .7);
+        font-size: 1.125rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        padding-top: 0.625rem;
+        //line-height: 30px;
+      }
+    }
+
+  }
+}
+// 地图模块
+
+.map {
+  position: relative;
+  height: 35.625rem;
+  padding-top: 1.25rem;
+  //margin: 0.3125rem;
+  text-align: center;
+  // visibility: hidden;
+  overflow: hidden;
+  .china {
+    width: 100%;
+    height: 100%;
+    // background-color: pink;
+    margin: 0 auto;
+    z-index: 100;
+  }
+  .map1, .map2, .map3 {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  .map1 {
+    width: 20rem;
+    height: 20rem;
+    // margin: 0 auto;
+    background: url(~"assets/imgs/map.png") no-repeat ;
+    opacity: .3;
+    
+    background-size: 100% 100%;
+  }
+//color: #0f0fe3;
+  .map2 {
+    // 定位的水平居中方式
+    transform: translate(-50%, -50%);
+    width: 28.375rem;
+    height: 28.375rem;
+    background: url(~"assets/imgs/lbx.png");
+    opacity: .6;
+    animation: rotate1 15s linear infinite;
+    // z-index: 10;
+    background-size: 100% 100%;
+  }
+
+  .map3 {
+    width: 23.375rem;
+    height: 23.375rem;
+    // less需要加上~导入路径
+    background: url(~"assets/imgs/jt.png") no-repeat;
+    // 设置背景大小使背景图片跟着变化
+    opacity: .6;
+    // 名称 时间 旋转样式 旋转方式
+    background-size: 100% 100%;
+    animation: rotate2 15s linear infinite;
+  }
+
+  .chat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6.25rem;
+  }
+}
+
+@keyframes  rotate1{
+  from {
+    transform:translate(-50%, -50%) rotate(0deg)
+  }
+  to {
+    transform:translate(-50%, -50%) rotate(360deg)
+  }
+}
+
+@keyframes  rotate2{
+  from {
+    transform:translate(-50%, -50%) rotate(0deg)
+  }
+  to {
+    transform:translate(-50%, -50%) rotate(-360deg)
+  }
+}
+/* 约束屏幕尺寸 */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 42px !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 80px !important;
+  }
+
+  .column {
+    .panel {
+      margin-bottom: 2rem;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3120deca-1202-464a-a13d-018537126e3a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+        <option value="Less File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1tIcv0ky39QMSm1awvIq13cqk7g" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/font" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.jiyuanime.ui.Setting" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\课程设计\大数据\project\hadoop\src\components\common\HomeItem" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\课程设计\大数据\project\hadoop\src\assets\font" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3120deca-1202-464a-a13d-018537126e3a" name="Default Changelist" comment="" />
+      <created>1622460270493</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622460270493</updated>
+      <workItem from="1622460271637" duration="313000" />
+      <workItem from="1622460603868" duration="15619000" />
+      <workItem from="1622505670762" duration="5444000" />
+      <workItem from="1622513438133" duration="11487000" />
+      <workItem from="1622533685585" duration="1755000" />
+      <workItem from="1622616885909" duration="1190000" />
+      <workItem from="1622860813695" duration="18509000" />
+      <workItem from="1622954556021" duration="17110000" />
+      <workItem from="1622975485881" duration="18923000" />
+      <workItem from="1623028810034" duration="1568000" />
+      <workItem from="1623125536807" duration="1147000" />
+      <workItem from="1624005457998" duration="845000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="936" y="374" key="#Custom_Plugin_Repositories" timestamp="1622460730082">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="936" y="374" key="#Custom_Plugin_Repositories/0.0.1707.920@0.0.1707.920" timestamp="1622460730082" />
+    <state x="740" y="201" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1622529473484">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="740" y="201" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1622529473484" />
+    <state x="564" y="120" key="SettingsEditor" timestamp="1622461864530">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="564" y="120" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1622461864530" />
+    <state x="476" y="75" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1622467356816">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="476" y="75" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1707.920@0.0.1707.920" timestamp="1622467356816" />
+    <state x="510" y="211" key="run.anything.popup" timestamp="1622984200694">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="510" y="211" key="run.anything.popup/0.0.1707.920@0.0.1707.920" timestamp="1622984200694" />
+    <state x="943" y="199" width="672" height="678" key="search.everywhere.popup" timestamp="1622966926510">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="943" y="199" width="672" height="678" key="search.everywhere.popup/0.0.1707.920@0.0.1707.920" timestamp="1622966926510" />
+  </component>
+</project>

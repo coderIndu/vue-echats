@@ -1,0 +1,221 @@
+@font-face {
+  font-family: electronicFont;
+  src: url(assets/font/DS-DIGIT.TTF);
+}
+.main {
+  display: flex;
+  min-width: 1024px;
+  max-width: 2560px;
+  margin: 0 auto;
+}
+.main .column {
+  flex: 3;
+}
+.main .column:nth-child(2) {
+  flex: 5;
+  margin: 0 0.625rem 0.9375rem;
+}
+.panel {
+  width: 100%;
+  position: relative;
+  height: 16rem;
+  margin-bottom: 0.7rem;
+  border: 1px solid rgba(25, 186, 139, 0.17);
+  background: url(assets/imgs/line.png) no-repeat rgba(255, 255, 255, 0.02);
+  text-align: center;
+}
+.panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-left: 2px solid #02a6b5;
+  border-top: 2px solid #02a6b5;
+}
+.panel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid #02a6b5;
+  border-top: 2px solid #02a6b5;
+}
+.panel .content,
+.panel .content_right {
+  width: 90%;
+  height: 15rem;
+  margin: 0.3125rem auto;
+}
+.panel .panel-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.panel .panel-footer::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-left: 2px solid #02a6b5;
+  border-bottom: 2px solid #02a6b5;
+}
+.panel .panel-footer::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid #02a6b5;
+  border-bottom: 2px solid #02a6b5;
+}
+.no {
+  background-color: rgba(101, 132, 226, 0.1);
+  padding: 0.625rem;
+}
+.no .no-hd {
+  position: relative;
+  border: 1px solid rgba(25, 186, 193, 0.3);
+}
+.no .no-hd ul {
+  display: flex;
+}
+.no .no-hd ul li {
+  position: relative;
+  flex: 1;
+  height: 5rem;
+  font-size: 4.375rem;
+  color: #ffeb7b;
+  text-align: center;
+  font-family: "electronicFont";
+}
+.no .no-hd ul li:nth-child(1)::after {
+  position: absolute;
+  content: '';
+  top: 25%;
+  right: 0;
+  height: 50%;
+  width: 0.0625rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+.no .no-hd::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 1.875rem;
+  height: 0.625rem;
+  border-top: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+}
+.no .no-hd::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  right: 0;
+  width: 1.875rem;
+  height: 0.625rem;
+  border-bottom: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+}
+.no .no-bd ul {
+  display: flex;
+}
+.no .no-bd ul li {
+  flex: 1;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.125rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding-top: 0.625rem;
+}
+.map {
+  position: relative;
+  height: 35.625rem;
+  padding-top: 1.25rem;
+  text-align: center;
+  overflow: hidden;
+}
+.map .china {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 100;
+}
+.map .map1,
+.map .map2,
+.map .map3 {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.map .map1 {
+  width: 20rem;
+  height: 20rem;
+  background: url(assets/imgs/map.png) no-repeat;
+  opacity: 0.3;
+  background-size: 100% 100%;
+}
+.map .map2 {
+  transform: translate(-50%, -50%);
+  width: 28.375rem;
+  height: 28.375rem;
+  background: url(assets/imgs/lbx.png);
+  opacity: 0.6;
+  animation: rotate1 15s linear infinite;
+  background-size: 100% 100%;
+}
+.map .map3 {
+  width: 23.375rem;
+  height: 23.375rem;
+  background: url(assets/imgs/jt.png) no-repeat;
+  opacity: 0.6;
+  background-size: 100% 100%;
+  animation: rotate2 15s linear infinite;
+}
+.map .chat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6.25rem;
+}
+@keyframes rotate1 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes rotate2 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+/* 约束屏幕尺寸 */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 42px !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 80px !important;
+  }
+  .column .panel {
+    margin-bottom: 2rem;
+  }
+}
