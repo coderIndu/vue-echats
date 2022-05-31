@@ -1,4 +1,6 @@
 import {request} from '@/network/request'
+const currentYear = new Date().getFullYear()
+const re = new RegExp(`(?<=${currentYear}-).*`)
 
 // 获取数据
 export function getData() {
@@ -20,7 +22,8 @@ export  function lineData(data) {
     let day_confirm = []  // 保存最近五天的确诊数
     // 提取最近五天的数据
     for (let i = chinaDayList.length - 1; i > chinaDayList.length - 6; i--) {
-        let formatDate = chinaDayList[i].date.match(/(?<=2021-).*/)[0].replace("-","\/")
+
+        let formatDate = chinaDayList[i].date.match(re)[0].replace("-","\/")
         // console.log(formatDate)
         day_confirm.push(chinaDayList[i].today.confirm)
         dayList_date.push(formatDate)
@@ -214,8 +217,10 @@ export function line_rData(data) {
         ]
     } // 存放数据
     // console.log(chinaDayList)
+
     for (let i = chinaDayList.length-8; i < chinaDayList.length-1; i++) {
-        let date = chinaDayList[i+1].date.match(/(?<=2021-).*/)[0].replace("-","\/")
+        
+        let date = chinaDayList[i+1].date.match(re)[0].replace("-","\/")
         console.log(date)
         // console.log(chinaDayList[i].date)
         let {heal, dead, storeConfirm, input} = chinaDayList[i].total // 治愈，死亡，确诊，境外输入
