@@ -1,2 +1,2 @@
 # vue-echats
-一个简单的vue+vite+echats的可视化项目
+疫情下的数据可视化
