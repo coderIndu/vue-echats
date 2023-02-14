@@ -23,7 +23,7 @@ export  function lineData(data) {
     // 提取最近五天的数据
     for (let i = chinaDayList.length - 1; i > chinaDayList.length - 6; i--) {
 
-        let formatDate = chinaDayList[i].date.match(re)[0].replace("-","\/")
+        let formatDate = chinaDayList[i].date.replace("-","\/")
         // console.log(formatDate)
         day_confirm.push(chinaDayList[i].today.confirm)
         dayList_date.push(formatDate)
@@ -220,8 +220,8 @@ export function line_rData(data) {
 
     for (let i = chinaDayList.length-8; i < chinaDayList.length-1; i++) {
         
-        let date = chinaDayList[i+1].date.match(re)[0].replace("-","\/")
-        console.log(date)
+        let date = chinaDayList[i+1].date.replace("-","\/")
+        // console.log(date)
         // console.log(chinaDayList[i].date)
         let {heal, dead, storeConfirm, input} = chinaDayList[i].total // 治愈，死亡，确诊，境外输入
         let {suspect} = chinaDayList[i].today
